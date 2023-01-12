@@ -1,0 +1,86 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
+:root {
+    --primary-font-family: 'Poppins', sans-serif;
+    --secondary-font-family:'Roboto', sans-serif;
+    --big-font: 24px;
+    --medium-font: 20px;
+    --small-font: 16px;
+    --x-small-font: 14.69px;
+    --headline-color:#562EFF;
+    --primary-color:#000000;
+    --secondary-color: #ED6B4F;
+    --bg-body:#E5E5E5;
+
+}
+
+/* Common Part */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--bg-body);
+    /* border: 1px solid seagreen; */
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+/* header style */
+
+
+/* main */
+.main{
+    width: 70%;
+    margin: 0 auto;
+}
+/* top player style */
+.top-player{
+    color:var(--primary-color);
+    font-family: var(--primary-font-family);
+    font-size: var(--small-font);
+
+}
+.top-player h3{
+    color:var(--primary-color);
+    font-size: var(--big-font);
+    color: var(--headline-color);
+    padding: 5px 15px;
+
+}
+.top-player img{
+    width: 56px;
+    height:56px;
+}
+.top-player-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.player{
+    display: flex;
+    gap:16px;
+    align-items: center;
+    padding:15px;
+}
+
+/* Responsive for Mobile Device */
+@media screen and (max-width: 576px) {
+    .main{
+        width: 100%;
+    }
+    /* top player style */
+    
+    
+    .top-player img{
+        width:200px;
+        height:200px;
+        object-fit: cover;
+    }
+    .top-player-container{
+        grid-template-columns: 1fr;
+    }
+    .player{
+        flex-direction: column;
+    }
+}
