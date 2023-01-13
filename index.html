@@ -5,12 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leader Board</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4bc0867709.js" crossorigin="anonymous"></script>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+     <div class="header-container">
+      <div class="logo-container">
+        <div class="logo">
+          <img src="images/icons/logo.png" alt="">
+        </div>
+        <div class="logo-text">
+          <h4>Idea</h4>    
+        </div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Works</a></li>
+          <li><a href=""><img src="images/icons/profile.png" alt=""></a></li>
+        </ul>
+      </nav>
+     </div>
+    </header>
+    <!-- Main Section Starts From Here -->
     <main class="main">
+      <!-- Top Player Section Starts From Here -->
       <section class="top-player">
         <h3>Top Players</h3>
         <div class="top-player-container">
@@ -39,7 +62,9 @@
             <h4>Mujahid</h4>
           </div>
         </div>
-      </section>
+      </section><!-- Top Player Section Ends Here -->
+
+      <!-- Top Blogs Section Starts From Here -->
       <section class="top-blogs">
         <h3>Top Blogs</h3>
         <div class="top-blogs-container">
@@ -81,10 +106,78 @@
                     copied</h4>
             <p><span class="author">By</span> Ferdinand Vogler</p>
             </div>
+          </div> 
+        </div>
+      </section><!-- Top Blogs Section Ends Here -->
+      <!-- Course Section Starts From Here -->
+      <section class="latest-courses">
+        <h3>Latest Course</h3>
+        <div class="course-container">
+          <div class="courses">
+            <div class="course-details">
+              <img src="images/courses/course-1.png" alt="">
+              <h4>React - The Complete <br>Guide 2020</h4>
+              <p>Reed Krakoff.</p>
+            </div>
+            <div class="course-info">
+              <div class="course-rating">
+                <i class="fa-solid fa-star filled-icon" class=""></i>
+                <i class="fa-solid fa-star filled-icon"></i>
+                <i class="fa-solid fa-star filled-icon"></i>
+                <i class="fa-solid fa-star filled-icon"></i>
+                <i class="fa-regular fa-star empty-icon"></i>
+                <span class="author">4.5</span>
+              </div>
+              <div class="course-hour">
+                <i class="fa-regular fa-clock fa"></i>
+                <span>1.30hr</span>
+              </div>
+            </div>
           </div>
-          
+          <div class="courses">
+            <div class="course-details">
+              <img src="images/courses/course-2.png" alt="">
+              <h4>Powerpoint 2020 <br>Master Powerpoint Cour</h4>
+              <p>Walter Scott</p>
+            </div>
+            <div class="course-info">
+              <div class="course-rating">
+                <i class="fa-solid fa-star filled-icon" class=""></i>
+                <i class="fa-solid fa-star filled-icon"></i>
+                <i class="fa-solid fa-star filled-icon"></i>
+                <i class="fa-solid fa-star filled-icon"></i>
+                <i class="fa-regular fa-star empty-icon"></i>
+                <span class="author">4.3</span>
+              </div>
+              <div class="course-hour">
+                <i class="fa-regular fa-clock fa"></i>
+                <span>1.30hr</span>
+              </div>
+            </div>
+          </div>
+          <div class="courses">
+            <div class="course-details">
+              <img src="images/courses/course-3.png" alt="">
+              <h4>The Complete JavaScript <br>Course 2020</h4>
+              <p>Reed Krakoff.</p>
+            </div>
+            <div class="course-info">
+              <div class="course-rating">
+                <i class="fa-solid fa-star filled-icon" class=""></i>
+                <i class="fa-solid fa-star filled-icon"></i>
+                <i class="fa-solid fa-star filled-icon"></i>
+                <i class="fa-solid fa-star filled-icon"></i>
+                <i class="fa-regular fa-star empty-icon"></i>
+                <span class="author">4.5</span>
+              </div>
+              <div class="course-hour">
+                <i class="fa-regular fa-clock fa"></i>
+                <span>1.30hr</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-    </main>
+    </main><!-- Main Section Ends Here -->
   </body>
 </html>
